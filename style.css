@@ -114,7 +114,7 @@ body{
     
     .heading{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 4rem;
+        font-size: 4.9rem;
         padding-top: 1.5rem;
         font-weight: bolder;
     };
@@ -135,8 +135,8 @@ body{
         flex-wrap: wrap;   
     } 
     .buttons{
-        background-color: #ff94cf;
-        color:#6fdd00;
+        background-color: #ff6fd6;
+        color:#ffffff;
         height:25vmin; 
         width:25vmin;
         border-radius: 1rem;
@@ -191,7 +191,7 @@ body{
     
     }
     body{
-        background-color: #68e3ff;
+        background-color: #44d3f4;
         text-align: center;
     
        
