@@ -119,7 +119,7 @@ body{
 }
 
 .button1{
-    background-color: rgb(101, 101, 101);
+    background-color:  rgb(22, 177, 255);
     color:white; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
@@ -129,7 +129,8 @@ body{
     border-radius: 10px;
 }
 .button1:hover{
-    background-color: rgb(26, 165, 234);
+    background-color:rgb(101, 101, 101);
+    color:white;
 }
 
 .button2{
@@ -144,6 +145,7 @@ body{
 }
 .button2:hover{
     background-color:rgb(101, 101, 101);
+    color:white;
 }
 
 
@@ -177,7 +179,7 @@ body{
     .heading{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 4.2rem;
-        padding-top: 1.5rem;
+        padding-top: 2.5rem;
         font-weight: bolder;
     };
 
@@ -186,7 +188,6 @@ body{
         display:flex;
         justify-content:center;
         align-items: center;
-        margin-top:1rem;
     }
     .box{
         height:84vmin;
@@ -287,33 +288,38 @@ body{
         flex-direction: row;
     }
     .button1{
-        background-color: rgb(101, 101, 101);
-        color:white; 
+        background-color: #ffbd42;
+        color:rgb(0, 0, 0); 
+        box-shadow:0 0 0.6rem rgb(0, 0, 0, 0.4);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 15px;
         height:23px;
         width:110px;
-        border-radius: 5px;
+        border-radius: 7px;
         padding: 0;
         margin:0rem 0.2rem 0rem 0.4rem ;
+        font-weight: bold;
     }
     .button2{
-        background-color: rgb(22, 177, 255);
-        color:white; 
+        background-color: #ffbd42;
+        color:rgb(0, 0, 0); 
+        box-shadow:0 0 0.6rem rgb(0, 0, 0, 0.4);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 15px;
         height:23px;
         width:110px;
-        border-radius: 5px;
+        border-radius: 7px;
         padding: 0;
         margin:0rem 0.2rem 0rem 0.2rem ;
+        font-weight: bold;
     }
     .show{
         border-radius: 10px;
         height:22px;
         width:38px;
         font-size:10.5px;
-        background-color: rgb(232, 232, 232);
+        background-color: rgb(220, 220, 220);
+        box-shadow:0 0 0.6rem rgb(0, 0, 0, 0.3);
     }
 }
 
