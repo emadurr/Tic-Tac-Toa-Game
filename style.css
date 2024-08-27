@@ -201,4 +201,11 @@ body{
        
         
     }
+    .hide{
+        display: none;
+    }
+    
+    .cross{
+        cursor: crosshair;
+    }
 }
