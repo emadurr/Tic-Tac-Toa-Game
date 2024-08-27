@@ -10,7 +10,8 @@ let button1 = document.querySelector(".button1");
 let button2 = document.querySelector(".button2");
 let button0 = document.querySelector(".show");
 let bg = document.querySelector("body");
-let heading =document.querySelector(".heading")
+let heading =document.querySelector(".heading");
+let song = document.querySelector(".song");
 
 
 let play1 = prompt("Enter Your Name (Player 1)")   //"Player 1";
@@ -37,12 +38,20 @@ buttons.forEach((click)=>{
             turn=false;
             draw++;
             console.log(draw);
+            button1.classList.add("hide");
+            button2.classList.add("hide");
+            song.classList.add("hide");
+            setting="off";
         }
         else{
             click.innerText="O";
             turn=true;
             draw++;
             console.log(draw);
+            button1.classList.add("hide");
+            button2.classList.add("hide");
+            song.classList.add("hide");
+            setting="off";
         }
         click.disabled =true;
         checkwinner ();
@@ -110,6 +119,10 @@ const enable = ()=>{
     after.classList.add("hide");
     console.log("clearen");
     draw=0;
+    button1.classList.add("hide");
+    button2.classList.add("hide");
+    song.classList.add("hide");
+    setting="off";
 };
 
 reset.addEventListener("click", enable);
@@ -127,15 +140,18 @@ button0.addEventListener("click" , ()=>{
     if(setting === "off"){
         button1.classList.remove("hide");
         button2.classList.remove("hide");
+        song.classList.remove("hide");
         console.log("i done");
         setting="on";
     }
     else{
         button1.classList.add("hide");
         button2.classList.add("hide");
+        song.classList.add("hide");
         setting="off";
     }
 })
+
 
 
 // ----------------------------------------
