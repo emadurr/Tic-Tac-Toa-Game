@@ -30,13 +30,13 @@ buttons.forEach((click)=>{
         if(turn === true){
             click.innerText="X";
             turn=false;
-            draw = draw + 1;
+            draw++;
             console.log(draw);
         }
         else{
             click.innerText="O";
             turn=true;
-            draw = draw + 1;
+            draw++;
             console.log(draw);
         }
         click.disabled =true;
@@ -52,10 +52,10 @@ const disable = ()=>{
 
 const winnerText = (user)=>{
         if(user === "O"){
-            para.innerText=  "Congratulation! The Winner is '"+ play2 + "'" ;
+            para.innerText=  "Congratulations! The Winner is '"+ play2 + "'" ;
         }
         else{
-            para.innerText=  "Congratulation! The Winner is '"+ play1 + "'" ;
+            para.innerText=  "Congratulations! The Winner is '"+ play1 + "'" ;
         };
 
         
@@ -76,13 +76,11 @@ const checkwinner = ()=>{
             }
         }
         if(draw === 9){
-            if(position1 != position2 && position2 != position3 && position1 != position3){
+            console.log("before f");
+            if(position1 != position2 && position2 != position3){
                 drawf();
-            }
-        
-            
-        };
-    
+            }            
+        };   
     }
  };
 
