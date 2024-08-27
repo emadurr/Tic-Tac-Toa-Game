@@ -76,7 +76,6 @@ const checkwinner = ()=>{
             }
         }
         if(draw === 9){
-            console.log("before f");
             if(position1 != position2 && position2 != position3){
                 drawf();
             }            

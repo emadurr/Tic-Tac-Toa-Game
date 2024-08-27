@@ -135,7 +135,7 @@ body{
         flex-wrap: wrap;   
     } 
     .buttons{
-        background-color: #ff5eb7;
+        background-color: #ff94cf;
         color:#b6f874;
         height:25vmin; 
         width:25vmin;
@@ -189,5 +189,12 @@ body{
         margin-top:1.2rem;
         cursor: pointer;
     
+    }
+    body{
+        background-color: #68e3ff;
+        text-align: center;
+    
+       
+        
     }
 }
