@@ -179,12 +179,12 @@ body{
     .heading{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 4.2rem;
-        padding-top: 2.5rem;
+        padding-top: 2.9rem;
         font-weight: bolder;
     };
 
     .mainBox{
-        height:86vh;
+        height:60vh;
         display:flex;
         justify-content:center;
         align-items: center;
