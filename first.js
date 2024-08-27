@@ -6,6 +6,11 @@ let reset = document.querySelector(".reset");
 let newButton = document.querySelector(".new");
 let after = document.querySelector(".after");
 let para = document.querySelector(".winpara");
+let button1 = document.querySelector(".button1");
+let button2 = document.querySelector(".button2");
+let button0 = document.querySelector(".show");
+let bg = document.querySelector("body");
+let heading =document.querySelector(".heading")
 
 
 let play1 = prompt("Enter Your Name (Player 1)")   //"Player 1";
@@ -109,3 +114,110 @@ const enable = ()=>{
 
 reset.addEventListener("click", enable);
 newButton.addEventListener("click", enable);
+
+console.log("Emad Ur Rehman");
+
+
+
+// ------------------------------------
+
+let setting = "off";
+button0.addEventListener("click" , ()=>{
+
+    if(setting === "off"){
+        button1.classList.remove("hide");
+        button2.classList.remove("hide");
+        console.log("i done");
+        setting="on";
+    }
+    else{
+        button1.classList.add("hide");
+        button2.classList.add("hide");
+        setting="off";
+    }
+})
+
+
+// ----------------------------------------
+
+let mode = "dark";
+
+button1.addEventListener("click" , ()=>{
+    if(mode === "dark"){
+        mode="light";
+        console.log("dark");
+        bg.style.backgroundColor = "black";
+        button1.innerText="Light Mode"
+        bg.classList.remove("light");
+        bg.classList.remove("dark");
+        theme = "dark";
+        button2.innerText="Apply Theme";
+        heading.style.color = "white";
+        para.style.color = "white";
+    }
+    else{
+        mode="dark";
+        console.log("white");
+        bg.style.backgroundColor = "white";
+        button1.innerText="Dark Mode";
+        bg.classList.remove("light");
+        bg.classList.remove("dark");
+        theme = "dark";
+        button2.innerText="Apply Theme";
+        heading.style.color = "black";
+        para.style.color = "black";
+       
+    }
+} )
+
+let theme = "dark";
+
+button2.addEventListener("click" , ()=>{
+    if(theme === "dark"){
+    theme = "light";
+    console.log("Dark theme");
+    bg.classList.add("dark");
+    bg.classList.remove("light");
+    button2.innerText="Light Theme";
+    bg.style.backgroundColor = "white";
+    mode === "dark"
+    heading.style.color = "white";
+    para.style.color = "white";
+    for(let boxs of buttons){
+        boxs.style.backgroundColor="#bfbfbf";
+        boxs.style.color="#193C40"
+    };
+    }
+    else if(theme === "light"){
+        theme="no theme";
+        console.log("Light theme");
+        bg.classList.add("light");
+        bg.classList.remove("dark");
+        button2.innerText="Default";
+        bg.style.backgroundColor = "white";
+        mode === "dark";
+        heading.style.color = "#40110D";
+        para.style.color = "#40110D";
+        for(let boxs of buttons){
+            boxs.style.backgroundColor="#F27781";
+            boxs.style.color="white"
+        };
+    }
+    else{
+        theme="dark";
+        console.log("No theme");
+        bg.classList.remove("light");
+        button2.innerText="Dark Theme";
+        bg.style.backgroundColor = "#07cbf7";
+        mode === "dark";
+
+        heading.style.color = "black";
+        para.style.color = "black";
+        for(let boxs of buttons){
+            boxs.style.backgroundColor="#ff5eb7";
+            boxs.style.color="#b6f874"
+        };
+    }
+})
+
+

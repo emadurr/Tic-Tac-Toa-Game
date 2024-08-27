@@ -109,6 +109,68 @@ body{
 
 /* ----------------------responsive */
 
+.dark{
+    background-image: url(dark2.jpg);
+    background-size: cover;
+}
+.light{
+    background-image: url(light1.jpg);
+    background-size: cover; 
+}
+
+.button1{
+    background-color: rgb(101, 101, 101);
+    color:white; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    height:36px;
+    width:175px;
+    margin:10px 0px 10px 0px;
+    border-radius: 10px;
+}
+.button1:hover{
+    background-color: rgb(26, 165, 234);
+}
+
+.button2{
+    background-color: rgb(22, 177, 255);
+    color:white; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    height:36px;
+    width:175px;
+    margin:0px 10px 10px 0px;
+    border-radius: 10px;
+}
+.button2:hover{
+    background-color:rgb(101, 101, 101);
+}
+
+
+.hide{
+    display:none;
+    
+}
+
+.show{
+    border-radius: 10px;
+    height:35px;
+    width:60px;
+    font-size:25px;
+    background-color: rgb(232, 232, 232);
+   
+}
+.box1{
+   display: flex;
+   flex-direction: column;
+   position:fixed;
+   padding:10px;
+   
+}
+
+
+
+
 
 @media screen and (max-width: 600px ) {
     
@@ -208,4 +270,50 @@ body{
     .cross{
         cursor: crosshair;
     }
+    .light{
+        background-image: url(light1.jpg);
+        background-size: cover; 
+        background-attachment: fixed;
+    }
+
+    .dark{
+        background-image: url(dark2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .box1{
+        display: flex;
+        flex-direction: column;
+    }
+    .button1{
+        background-color: rgb(101, 101, 101);
+        color:white; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 9px;
+        height:20px;
+        width:100px;
+        border-radius: 5px;
+        padding: 0;
+        margin:0.2rem 0.2rem 0rem 0rem ;
+    }
+    .button2{
+        background-color: rgb(22, 177, 255);
+        color:white; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 9px;
+        height:20px;
+        width:100px;
+        border-radius: 5px;
+        padding: 0;
+        margin:0.2rem 0.2rem 0.2rem 0rem ;
+    }
+    .show{
+        border-radius: 10px;
+        height:19px;
+        width:30px;
+        font-size:10.5px;
+        background-color: rgb(232, 232, 232);
+    }
 }
+
