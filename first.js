@@ -8,14 +8,20 @@ let after = document.querySelector(".after");
 let para = document.querySelector(".winpara");
 let button1 = document.querySelector(".button1");
 let button2 = document.querySelector(".button2");
+let button3 = document.querySelector(".button3");
 let button0 = document.querySelector(".show");
 let bg = document.querySelector("body");
 let heading =document.querySelector(".heading");
 let song = document.querySelector(".song");
 
 
-let play1 = prompt("Enter Your Name (Player 1)")   //"Player 1";
-let play2 = prompt("Enter Your Name (Player 2)")   //"Player 2";
+let play1 = "Player 1";   //"Player 1";
+let play2 = "Player 2";   //"Player 2";
+
+button3.addEventListener("click" ,()=>{
+    play1 = prompt("Enter Your Name (Player 1)");
+    play2 = prompt("Enter Your Name (Player 2)");
+})
 
 const winning = [
     [0,1,2],
@@ -40,6 +46,7 @@ buttons.forEach((click)=>{
             console.log(draw);
             button1.classList.add("hide");
             button2.classList.add("hide");
+            button3.classList.add("hide");
             song.classList.add("hide");
             setting="off";
         }
@@ -50,6 +57,7 @@ buttons.forEach((click)=>{
             console.log(draw);
             button1.classList.add("hide");
             button2.classList.add("hide");
+            button3.classList.add("hide");
             song.classList.add("hide");
             setting="off";
         }
@@ -121,6 +129,7 @@ const enable = ()=>{
     draw=0;
     button1.classList.add("hide");
     button2.classList.add("hide");
+    button3.classList.add("hide");
     song.classList.add("hide");
     setting="off";
 };
@@ -140,6 +149,7 @@ button0.addEventListener("click" , ()=>{
     if(setting === "off"){
         button1.classList.remove("hide");
         button2.classList.remove("hide");
+        button3.classList.remove("hide");
         song.classList.remove("hide");
         console.log("i done");
         setting="on";
@@ -147,6 +157,7 @@ button0.addEventListener("click" , ()=>{
     else{
         button1.classList.add("hide");
         button2.classList.add("hide");
+        button3.classList.add("hide");
         song.classList.add("hide");
         setting="off";
     }
