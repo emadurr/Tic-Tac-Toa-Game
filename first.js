@@ -38,12 +38,12 @@ let turn = true;
 
 buttons.forEach((click)=>{
     click.addEventListener("click" , ()=>{
-        console.log("clx");
+        // console.log("clx");
         if(turn === true){
             click.innerText="X";
             turn=false;
             draw++;
-            console.log(draw);
+            // console.log(draw);
             button1.classList.add("hide");
             button2.classList.add("hide");
             button3.classList.add("hide");
@@ -54,7 +54,7 @@ buttons.forEach((click)=>{
             click.innerText="O";
             turn=true;
             draw++;
-            console.log(draw);
+            // console.log(draw);
             button1.classList.add("hide");
             button2.classList.add("hide");
             button3.classList.add("hide");
@@ -93,7 +93,7 @@ const checkwinner = ()=>{
 
         if(position1 != "" && position2 != "" && position3 != ""){
             if(position1 === position2 && position2 ===position3){
-                console.log("Winner" , position1);
+                // console.log("Winner" , position1);
                 winnerText(position1);               
             }
         }
@@ -118,14 +118,14 @@ const enableButton = ()=>{
         box.disabled = false ;
         box.innerText = "" ;
     };
-    console.log("clearen1st");
+    // console.log("clearen1st");
 };
 
 const enable = ()=>{
     turn = true;
     enableButton();
     after.classList.add("hide");
-    console.log("clearen");
+    // console.log("clearen");
     draw=0;
     button1.classList.add("hide");
     button2.classList.add("hide");
@@ -137,11 +137,10 @@ const enable = ()=>{
 reset.addEventListener("click", enable);
 newButton.addEventListener("click", enable);
 
-console.log("Emad Ur Rehman");
 
 
 
-// ------------------------------------
+// -------------- Themes----------------------
 
 let setting = "off";
 button0.addEventListener("click" , ()=>{
@@ -151,7 +150,7 @@ button0.addEventListener("click" , ()=>{
         button2.classList.remove("hide");
         button3.classList.remove("hide");
         song.classList.remove("hide");
-        console.log("i done");
+        // console.log("i did");
         setting="on";
     }
     else{
@@ -172,7 +171,7 @@ let mode = "dark";
 button1.addEventListener("click" , ()=>{
     if(mode === "dark"){
         mode="light";
-        console.log("dark");
+        // console.log("dark");
         bg.style.backgroundColor = "black";
         button1.innerText="Light Mode"
         bg.classList.remove("light");
@@ -184,7 +183,7 @@ button1.addEventListener("click" , ()=>{
     }
     else{
         mode="dark";
-        console.log("white");
+        // console.log("white");
         bg.style.backgroundColor = "white";
         button1.innerText="Dark Mode";
         bg.classList.remove("light");
@@ -202,7 +201,7 @@ let theme = "dark";
 button2.addEventListener("click" , ()=>{
     if(theme === "dark"){
     theme = "light";
-    console.log("Dark theme");
+    // console.log("Dark theme");
     bg.classList.add("dark");
     bg.classList.remove("light");
     button2.innerText="Light Theme";
@@ -217,7 +216,7 @@ button2.addEventListener("click" , ()=>{
     }
     else if(theme === "light"){
         theme="no theme";
-        console.log("Light theme");
+        // console.log("Light theme");
         bg.classList.add("light");
         bg.classList.remove("dark");
         button2.innerText="Default";
@@ -232,7 +231,7 @@ button2.addEventListener("click" , ()=>{
     }
     else{
         theme="dark";
-        console.log("No theme");
+        // console.log("No theme");
         bg.classList.remove("light");
         button2.innerText="Dark Theme";
         bg.style.backgroundColor = "#07cbf7";
