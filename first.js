@@ -15,6 +15,8 @@ let heading =document.querySelector(".heading");
 let song = document.querySelector(".song");
 
 
+
+
 let play1 = "Player 1";   //"Player 1";
 let play2 = "Player 2";   //"Player 2";
 
@@ -35,6 +37,8 @@ const winning = [
 ];
 let draw = 0;
 let turn = true;
+let x = 191919;
+let y = 191919;
 
 buttons.forEach((click)=>{
     click.addEventListener("click" , ()=>{
@@ -75,9 +79,11 @@ const disable = ()=>{
 const winnerText = (user)=>{
         if(user === "O"){
             para.innerText=  "Congratulations! The Winner is '"+ play2 + "'" ;
+            x = play2;
         }
         else{
             para.innerText=  "Congratulations! The Winner is '"+ play1 + "'" ;
+            y = play1;
         };
 
         
@@ -90,19 +96,17 @@ const checkwinner = ()=>{
              let position1 = buttons[set[0]].innerText;
              let position2 = buttons[set[1]].innerText;
              let position3 = buttons[set[2]].innerText;
-
         if(position1 != "" && position2 != "" && position3 != ""){
             if(position1 === position2 && position2 ===position3){
                 // console.log("Winner" , position1);
                 winnerText(position1);               
             }
-        }
-        else if(draw === 9){
-            if(position1 != position2 && position2 != position3){
+                     
+            };
+            if (draw === 9 && x === y){
                 drawf();
-            }            
-        };   
-    }
+            }   
+        }
  };
 
  const drawf = ()=>{
@@ -132,6 +136,8 @@ const enable = ()=>{
     button3.classList.add("hide");
     song.classList.add("hide");
     setting="off";
+    x=191919;
+    y=191919;
 };
 
 reset.addEventListener("click", enable);
