@@ -229,7 +229,7 @@ button2.addEventListener("click" , ()=>{
         bg.style.backgroundColor = "white";
         mode === "dark";
         heading.style.color = "#40110D";
-        para.style.color = "#40110D";
+        para.style.color = "black";
         for(let boxs of buttons){
             boxs.style.backgroundColor="#F27781";
             boxs.style.color="white"
