@@ -97,7 +97,7 @@ const checkwinner = ()=>{
                 winnerText(position1);               
             }
         }
-        if(draw === 9){
+        else if(draw === 9){
             if(position1 != position2 && position2 != position3){
                 drawf();
             }            
